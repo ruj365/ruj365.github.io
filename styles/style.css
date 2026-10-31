@@ -1,0 +1,25 @@
+body {
+  background-color: #101010;
+  color: #ffffff;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.ascii-art {
+    font-family: monospace;
+    /* font size and line height are the ones you want to change */
+    font-size: 13px;
+    line-height: 1.35; 
+    white-space: pre;
+    display: block;
+    width: max-content;
+    max-width: none;
+    overflow-x: auto;
+    text-align: left;
+}
