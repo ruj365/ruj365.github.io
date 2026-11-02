@@ -39,3 +39,35 @@ button:hover {
     background-color: #67656557;
     /* border-radius: 3px; */
 }
+
+#quit-screen {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    color: white;
+    z-index: 9999;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* add a case for oguri braille (quit art), set fixed font size and line height */
+.quit-art {
+    /* font size and line height are the ones you want to change */
+    font-size: 4px;
+    line-height: 1.2; 
+    white-space: pre;
+    display: block;
+    width: max-content;
+    max-width: none;
+    overflow-x: auto;
+    text-align: left;
+}
+
+#redirect-message {
+    font-family: monospace;
+    font-size: inherit;
+}

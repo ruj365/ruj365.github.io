@@ -14,10 +14,17 @@
         <button>- help</button>
         <button>- about</button>
         <button>- cv</button>
-        <button>- quit</button>
-
+        <button id="quit-button">- quit</button>
     </main>
+
+    <div id="quit-screen">
+            <pre id="quit-art" class="quit-art"></pre>
+            <p id="redirect-message"></p>
+    </div>
+
     <!-- Use js to display the ASCII art -->
     <script src="scripts/script.js"></script>
+    <!-- redirect to github profile upon quit -->
+    <script src="scripts/quit.js"></script>
 </body>
 </html>
