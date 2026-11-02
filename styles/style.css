@@ -23,3 +23,19 @@ body {
     overflow-x: auto;
     text-align: left;
 }
+
+button {
+    background-color: #101010;
+    color: #ffffff;
+    border: none;
+    margin: 3px;
+    padding: 3px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    /* original background colors: #868585, #67656557 */
+    background-color: #67656557;
+    /* border-radius: 3px; */
+}
