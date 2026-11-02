@@ -31,21 +31,21 @@ quitButton.addEventListener('click', function() {
     let dots = 1;
 
     redirectText.textContent =
-        'Redirecting to https://github.com/ruj365.';
+        'Redirecting to my GitHub profile.';
 
     const dotAnimation = setInterval(function() {
         dots = (dots % 3) + 1;
 
         redirectText.textContent =
-            'Redirecting to https://github.com/ruj365' + '.'.repeat(dots);
+            'Redirecting to my GitHub profile' + '.'.repeat(dots);
 
-    }, 500); // Update every 500ms
+    }, 750); // Update every 750ms
 
     setTimeout(function() {
         clearInterval(dotAnimation);
         window.location.href = 'https://github.com/ruj365';
-    }, 3000); // Redirect after 3 seconds
-});
+    }, 2000); // Redirect after 2 seconds
+}); // og every 500ms for 3000ms
 
 // Show front page when user back clicks from github profile
 window.addEventListener('pageshow', function() {

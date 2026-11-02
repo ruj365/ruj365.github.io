@@ -57,7 +57,7 @@ button:hover {
 /* add a case for oguri braille (quit art), set fixed font size and line height */
 .quit-art {
     /* font size and line height are the ones you want to change */
-    font-size: 4px;
+    font-size: 3px;
     line-height: 1.2; 
     white-space: pre;
     display: block;
@@ -69,5 +69,5 @@ button:hover {
 
 #redirect-message {
     font-family: monospace;
-    font-size: inherit;
+    font-size: 18px;
 }
