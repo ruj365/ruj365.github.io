@@ -114,7 +114,7 @@ button:hover {
 .quit-art {
     /* font size and line height are the ones you want to change */
     font-size: 3px;
-    line-height: 1.20; 
+    line-height: 1.2; 
     white-space: pre;
     display: block;
     width: max-content;

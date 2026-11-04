@@ -14,25 +14,23 @@ fetch('art/braille/joyboy.txt')
 
 // user visits the site again
 const welcomeMessage = document.getElementById('welcome');
+function updateWelcomeMessage() {
+    const hasVisited = localStorage.getItem('hasVisited');
 
-const hasVisited = localStorage.getItem('hasVisited');
-
-if (hasVisited) {
-    welcomeMessage.textContent =
-        "Welcome back, user-421.";
-} else {
-    welcomeMessage.textContent =
-        "Welcome to my website, user-421.";
-
-    localStorage.setItem('hasVisited', 'true');
+    if (hasVisited === 'true') {
+        welcomeMessage.textContent = "Welcome back, user-421.";
+    } else {
+        welcomeMessage.textContent = "Welcome to my website, user-421.";
+        localStorage.setItem('hasVisited', 'true');
+    }
 }
 
-// works with back click from github profile
-window.addEventListener('pageshow', function() {
-    const welcomeMessage = document.getElementById('welcome');
+// user intially visits the site
+updateWelcomeMessage();
 
-    if (localStorage.getItem('hasVisited')) {
-        welcomeMessage.textContent =
-            "Welcome back, user-421.";
+// works with back click from github profile
+window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+        welcomeMessage.textContent = "Welcome back, user-421.";
     }
 });
