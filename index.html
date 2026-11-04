@@ -9,12 +9,37 @@
     <main class="content">
         <!-- ASCII Art -->
         <pre class="ascii-art" id="ascii-art"></pre>
-        
-        <!-- Buttons -->
-        <button>- help</button>
-        <button>- about</button>
-        <button>- cv</button>
-        <button id="quit-button">- quit</button>
+
+        <!-- welcome message -->
+        <div id="welcome"></div>
+
+        <!-- Terminal -->
+        <div id="terminal-panel">
+            <!-- Buttons for terminal -->
+            <div class="buttons">
+                <button>- help</button>
+                <button>- about</button>
+                <button>- projects</button>
+                <button>- cv</button>
+                <button id="quit-button" data-command="quit">- quit</button>
+            </div>
+
+            <div id="terminal">
+
+                <div id="terminal-output"></div>
+                <div class="terminal-input">
+                    <span>user-421@ruj365.github.io:~$</span>
+                    <input
+                        type="text"
+                        id="terminal-command"
+                        autocomplete="off"
+                        spellcheck="false"
+                    >
+                </div>
+
+            </div>
+        </div>
+
     </main>
 
     <div id="quit-screen">
@@ -22,8 +47,12 @@
             <p id="redirect-message"></p>
     </div>
 
+    <!-- ORDER OF SCRIPTS IS IMPORTANT -->
+     
     <!-- Use js to display the ASCII art -->
     <script src="scripts/script.js"></script>
+    <!-- terminal script -->
+    <script src="scripts/terminal.js"></script>
     <!-- redirect to github profile upon quit -->
     <script src="scripts/quit.js"></script>
 </body>
